@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'Create new Packaging Material'|trans }}{% endblock %}
+
+{% block bread %}
+    → <a href="{{ path('app_category') }}">{{ 'Packaging Material'|trans }}</a>
+    → {{ 'Add Packaging Material'|trans }}
+{% endblock %}
+
+{% block body %}
+{{ include('packaging_material/_form.html.twig') }}
+{% endblock %}

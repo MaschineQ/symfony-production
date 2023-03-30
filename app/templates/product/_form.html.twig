@@ -1,0 +1,42 @@
+{{ form_start(form) }}
+<div>{{ form_errors(form) }}</div>
+
+<div>
+    {{ form_label(form.name, 'Please enter the name', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.name, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.name) }}
+</div>
+
+<div>
+    {{ form_label(form.packagingType, 'Please select packaging type', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.packagingType, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.packagingType) }}
+</div>
+
+<div>
+    {{ form_label(form.quantityPerPiece, 'Please select quantity per price', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.quantityPerPiece, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.quantityPerPiece) }}
+</div>
+
+<div>
+    {{ form_label(form.category, 'Please select category', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.category, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.category) }}
+</div>
+
+<div>
+    {{ form_label(form.packagingMaterial, 'Please select packaging material', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.packagingMaterial, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.packagingMaterial) }}
+</div>
+
+<div>
+    {{ form_label(form.quantity, 'Please enter quantity', {'label_attr': {'class': 'block text-sm text-gray-700 font-medium'}}) }}
+    {{ form_widget(form.quantity, {'attr': {'class': 'block w-full shadow-sm border-gray-300 rounded-md border p-2 mt-1 mb-2'}}) }}
+    {{ form_errors(form.quantity) }}
+</div>
+
+<button type="submit" class="block w-full shadow-sm border-transparent bg-indigo-600 hover:bg-indigo-700 dark:gb-indigo-500 dark:hover:bg-indigo-400 text-white rounded-md border p-2 mt-4 mb-2">
+    {{ 'Save'|trans }}</button>
+{{ form_end(form)}}

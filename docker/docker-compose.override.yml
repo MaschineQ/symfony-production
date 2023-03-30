@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    ports:
+      - '4306:3306'
+
+  warehouse-php:
+    build:
+      args:
+        WWW_DATA_UID: 1000
+        WWW_DATA_GID: 1000
+
+  warehouse-nginx:
+    ports:
+      - "8080:80"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9009:8080
+
+  mailer:
+    image: schickling/mailcatcher
+    ports:
+      - 1080:1080
+      - 1025:1025

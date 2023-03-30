@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'Packaging Materials'|trans }}{% endblock %}
+
+{% block bread %}
+    → {{ 'Packaging Materials'|trans }}
+{% endblock %}
+
+{% block body %}
+    <div class="bg-white border rounded shadow mb-2">
+        <div class="p-3">
+            <a href="{{ path('app_packaging_material_add') }}">
+                <i class="fas fa-plus fa-fw mr-3 text-green-600"></i><span class="pb-1 md:pb-0 text-sm">{{ 'Add Packaging Material'|trans }}</span>
+            </a>
+        </div>
+    </div>
+    <div class="w-full">
+        <!--Table Card-->
+        <div class="bg-white border rounded shadow">
+            <div class="border-b p-3">
+                <h5 class="font-bold uppercase text-gray-600">{{ 'Packaging Materials'|trans }}</h5>
+            </div>
+            <div class="p-4">
+                {% if packagingMaterials|length > 0 %}
+                <div class="flex flex-col">
+                    <div class="-m-1.5 overflow-x-auto">
+                        <div class="p-1.5 min-w-full inline-block align-middle">
+                            <div class="overflow-hidden">
+                                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">{{ 'Name'|trans }}</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">{{ 'Quantity'|trans }}</th>
+                                        <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">{{ 'Action'|trans }}</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    {% for packagingMaterial in packagingMaterials %}
+                                        <tr class="odd:bg-white even:bg-gray-100 hover:bg-gray-300">
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800{% if packagingMaterial.quantity <= packagingMaterialCritical %} text-red-600{% elseif packagingMaterial.quantity <= packagingMaterialLow and packagingMaterial.quantity >= packagingMaterialCritical %} text-orange-400{% endif %}"><a href="{{ path('app_packaging_material_edit', { packagingMaterial: packagingMaterial.id }) }}">{{ packagingMaterial.name }}</a></td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800{% if packagingMaterial.quantity <= packagingMaterialCritical %} text-red-600{% elseif packagingMaterial.quantity <= packagingMaterialLow and packagingMaterial.quantity >= packagingMaterialCritical %} text-orange-400{% endif %}">{{ packagingMaterial.quantity }}</td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                <a href="{{ path('app_packaging_material_edit', { packagingMaterial: packagingMaterial.id }) }}"><i class="fas fa-edit fa-fw text-blue-600 px-5"></i></a>
+                                                <a href="{{ path('app_packaging_material_delete', { packagingMaterial: packagingMaterial.id }) }}" onclick="const confirmDialog = '{{ 'Are you sure you want to delete Packaging Material?'|trans }}'; return confirm(confirmDialog)"><i class="fas fa-sharp fa-solid fa-trash text-red-500"></i></a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                    <div class="text-center">
+                        {{ 'No Packaging Materials.'|trans }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <!--/table Card-->
+    </div>
+{% endblock %}

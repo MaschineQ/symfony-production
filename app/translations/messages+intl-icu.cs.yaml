@@ -1,0 +1,79 @@
+Product: Produkt
+Category: Kategorie
+Receipt: Příjem
+'My account': 'Můj účet'
+Notifications: Notifikace
+Logout: Odhlásit
+'Please enter the category name': 'Zadejte jméno kategorie'
+Save: Uložit
+'Create new Category': 'Vytvořit novou kategorii'
+'Add Category': 'Přidat kategorii'
+'Edit Category': 'Upravit kategorii'
+'Category Edit': 'Úprava kategorie'
+Name: Název
+'No categories.': 'Žádné kategorie.'
+'Please enter the date': 'Zadejte prosím datum'
+'Please select product': 'Vyberte prosím produkt'
+'Choose a product': 'Vyberte produkt'
+quantity: Množství
+'Edit Production': 'Upravit výrobu'
+'Add Production': 'Přidat výrobu'
+'Production Add': 'Přidat Výrobu'
+Productions: Výroba
+'No productions.': 'Žádná výroba.'
+Password: Heslo
+Login: Přihlásit
+'Please enter the name': 'Vyplňte prosím vaše jméno'
+Profile: Profil
+'Please enter the packaging quantity': 'Zadejte prosím počet obalů'
+'Please select label quantity': 'Zadejte prosím počet samolepek'
+'Add Receipt': 'Přidat příjemku'
+'Receipt Add': 'Přidat příjemku'
+Receipts: Příjemky
+Date: Datum
+Packaging: Obal
+Label: Samolepka
+'No receipts.': 'Žádné příjemky'
+'Category have been added.': 'Kategorie byla přidána.'
+'Your category have been updated.': 'Kategorie byla upravena.'
+'production have been added.': 'Výroba byla přidána.'
+'An error has occurred.': 'Vyskytla se chyba.'
+'Product have been added.': 'Produkt byl přidán.'
+'Your product have been updated.': 'Produkt byl upraven.'
+'Receipt have been added.': 'Příjemnka byla vytvořena.'
+'Your user profile settings were saved.': 'Profil byl uložen.'
+'Please enter quantity': 'Zadejte prosím množství'
+'Please enter quantity packaging': 'Zadejte prosím počet obalů'
+'Please enter quantity label': 'Zadejte prosím počet samolepek'
+'Please select packaging type': 'Vyberte prosím typ balení'
+'Please select quantity per price': 'Vyberte prosím množství na jednotku (kus)'
+'Please select category': 'Vyberte prosím kategorii'
+'Choose a category': 'Vyberte kategorii'
+Liter: Litr
+Gram: Gram
+'Choose a type': 'Vyberte typ'
+Products: Produkty
+'Add Product': 'Přidat produkt'
+'There is no category. Please create a category first.': 'Neexistuje žádná kategorie. Vytvořte prosím nejdřív kategorii.'
+Quantity: Množství
+'Quantity per Piece': 'Množství na kus'
+Unit: Jednotka
+'No products.': 'Žádné produkty.'
+'Product Add': 'Přidat produkt'
+'Edit Product': 'Upravit produkt'
+'Product Edit': 'Úprava produktu'
+'Receipt have been deleted.': 'Příjemka byla smazána.'
+'Production have been deleted.': 'Výroba byla smazána.'
+'Duplicate product': 'Duplicitní produkt.'
+'Product is required': 'Produkt je povinný.'
+'Receipt must have items. Please add at least one item.': 'Příjemka musí obsahovat položky. Vyplňte prosím aspoň jednu.'
+'Product not found': 'Produkt nenalezen.'
+'Wrong number of pieces per unit': 'Špatný počet kusů na jednotku.'
+Production: Výroba
+'Packaging materials': 'Obalové materiály'
+'Packaging material have been added.': 'Obalový materiál byl přidán.'
+'Packaging Materials': 'Obalové materiály'
+'Add Packaging Material': 'Přidat obalový materiál'
+'No Packaging Materials.': 'Žádný obalový materiál.'
+'Create new Packaging Material': 'Vyvořit nový obalový materiál'
+'Packaging Material': 'Obaloový materiál'

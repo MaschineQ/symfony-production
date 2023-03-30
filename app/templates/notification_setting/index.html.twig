@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'Notification Setting'|trans }}{% endblock %}
+
+{% block bread %}
+    → {{ 'Notification Setting'|trans }}
+{% endblock %}
+
+{% block body %}
+    <div class="w-full">
+        <div class="bg-white border rounded shadow">
+            <div class="border-b p-3">
+                <h5 class="font-bold uppercase text-gray-600">{{ 'Notification Setting'|trans }}</h5>
+            </div>
+            <div class="p-5">
+                {{ include('notification_setting/_notification_setting_form.html.twig', ) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
